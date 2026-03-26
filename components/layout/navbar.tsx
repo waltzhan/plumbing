@@ -73,8 +73,8 @@ export default function Navbar({ locale, messages }: NavbarProps) {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href={getLocalizedHref('/')} className="flex items-center">
-              <span className="text-2xl font-bold text-blue-900">GOPRO</span>
-              <span className="text-2xl font-bold text-cyan-500 ml-1">LED</span>
+              <span className="text-2xl font-bold text-blue-900">BOJET</span>
+              <span className="text-2xl font-bold text-cyan-500 ml-1">卫浴</span>
             </Link>
           </div>
 

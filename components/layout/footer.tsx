@@ -53,8 +53,8 @@ export default function Footer({ locale, messages }: FooterProps) {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-white">GOPRO</span>
-              <span className="text-2xl font-bold text-cyan-400 ml-1">LED</span>
+              <span className="text-2xl font-bold text-white">BOJET</span>
+              <span className="text-2xl font-bold text-cyan-400 ml-1">卫浴</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               {t.description}
