@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const messages = getMessages(locale);
   
-  const title = `${messages.about?.title || 'About Us'} | GOPRO LED`;
+  const title = `${messages.about?.title || 'About Us'} | bojet`;
   const description = messages.metadata?.description;
   
   // 为每种语言生成 alternate 链接
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title,
       description,
       url: `${baseUrl}/${locale}/about`,
-      siteName: locale === 'zh' ? '光莆LED' : 'GOPRO LED',
+      siteName: locale === 'zh' ? '博杰卫浴' : 'bojet',
       locale: locale,
       type: 'website',
       images: [

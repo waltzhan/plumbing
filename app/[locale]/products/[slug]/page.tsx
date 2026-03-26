@@ -66,7 +66,7 @@ export async function generateMetadata({
   const product = await getProductBySlug(slug);
 
   if (!product) {
-    return { title: 'Product Not Found | GOPRO LED' };
+    return { title: 'Product Not Found | bojet' };
   }
 
   const name = product.name?.[locale] || product.name?.en || product.name?.zh || '';
@@ -75,7 +75,7 @@ export async function generateMetadata({
     product.shortDescription?.[locale] ||
     product.shortDescription?.en ||
     '';
-  const title = product.seo?.metaTitle?.[locale] || `${name} | GOPRO LED`;
+  const title = product.seo?.metaTitle?.[locale] || `${name} | bojet`;
   const imageUrl = product.mainImage ? urlForImage(product.mainImage) : `${baseUrl}/og-image.jpg`;
 
   // 为每种语言生成 alternate 链接
@@ -96,7 +96,7 @@ export async function generateMetadata({
       title,
       description,
       url: `${baseUrl}/${locale}/products/${slug}`,
-      siteName: locale === 'zh' ? '光莆LED' : 'GOPRO LED',
+      siteName: locale === 'zh' ? '博杰卫浴' : 'bojet',
       locale: locale,
       type: 'article',
       images: [
@@ -121,7 +121,7 @@ export async function generateMetadata({
       product.model,
       'LED',
       product.category?.name?.[locale] || 'LED',
-      locale === 'zh' ? '光莆' : 'GOPRO',
+      locale === 'zh' ? '博杰卫浴' : 'bojet',
       'manufacturer',
       'wholesale',
     ].filter(Boolean),

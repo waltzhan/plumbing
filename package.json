@@ -26,7 +26,8 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "rss-parser": "^3.13.0",
-    "sanity": "^5.13.0"
+    "sanity": "^5.13.0",
+    "styled-components": "^6.3.12"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
