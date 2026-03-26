@@ -138,11 +138,10 @@ export default function Footer({ locale, messages }: FooterProps) {
           <div>
             <h4 className="text-sm font-semibold mb-4">{t.certifications}</h4>
             <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 bg-gray-800 text-xs text-gray-400 rounded">ISO 9001</span>
-              <span className="px-2 py-1 bg-gray-800 text-xs text-gray-400 rounded">ISO 14001</span>
-              <span className="px-2 py-1 bg-gray-800 text-xs text-gray-400 rounded">RoHS</span>
+              <span className="px-2 py-1 bg-gray-800 text-xs text-gray-400 rounded">CCC</span>
+              <span className="px-2 py-1 bg-gray-800 text-xs text-gray-400 rounded">UPC / cUPC</span>
               <span className="px-2 py-1 bg-gray-800 text-xs text-gray-400 rounded">CE</span>
-              <span className="px-2 py-1 bg-gray-800 text-xs text-gray-400 rounded">UL</span>
+              <span className="px-2 py-1 bg-gray-800 text-xs text-gray-400 rounded">CB</span>
             </div>
           </div>
         </div>

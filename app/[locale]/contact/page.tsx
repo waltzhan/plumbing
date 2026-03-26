@@ -199,17 +199,6 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                   </div>
                 </div>
               </div>
-
-              {/* 资质认证 */}
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h4 className="font-medium text-gray-900 mb-3">{t('footer.certifications')}</h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">CCC</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">UPC / cUPC</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">CE</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">CB</span>
-                </div>
-              </div>
             </div>
 
             {/* Quick Links */}
