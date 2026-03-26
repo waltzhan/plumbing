@@ -30,10 +30,10 @@
   "products": {
     "title": "Produk Kami",
     "categories": {
-      "opticalSensor": "Sensor Optik",
-      "lightModule": "Modul Sumber Cahaya",
-      "sterilizationModule": "Modul Sterilisasi",
-      "intelligentSensor": "Sensor Cerdas"
+      "faucets": "Seri Keran",
+      "showers": "Sistem Shower",
+      "bathroomAccessories": "Aksesori Kamar Mandi",
+      "plumbingParts": "Suku Cadang Pipa"
     },
     "viewDetails": "Lihat Detail",
     "allProducts": "Semua Produk",

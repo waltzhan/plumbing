@@ -30,10 +30,10 @@
   "products": {
     "title": "Sản phẩm của chúng tôi",
     "categories": {
-      "opticalSensor": "Cảm biến Quang học",
-      "lightModule": "Module Nguồn Sáng",
-      "sterilizationModule": "Module Khử khuẩn",
-      "intelligentSensor": "Cảm biến Thông minh"
+      "faucets": "Dòng Vòi Nước",
+      "showers": "Hệ Thống Vòi Hoa Sen",
+      "bathroomAccessories": "Phụ Kiện Phòng Tắm",
+      "plumbingParts": "Phụ Kiện Đường Ống"
     },
     "viewDetails": "Xem chi tiết",
     "allProducts": "Tất cả sản phẩm",

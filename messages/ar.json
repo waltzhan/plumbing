@@ -30,10 +30,10 @@
   "products": {
     "title": "منتجاتنا",
     "categories": {
-      "opticalSensor": "المستشعرات الضوئية",
-      "lightModule": "وحدات مصادر الضوء",
-      "sterilizationModule": "وحدات التعقيم",
-      "intelligentSensor": "الاستشعار الذكي"
+      "faucets": "سلسلة الصنابير",
+      "showers": "أنظمة الدش",
+      "bathroomAccessories": "إكسسوارات الحمام",
+      "plumbingParts": "قطع غيار السباكة"
     },
     "viewDetails": "عرض التفاصيل",
     "allProducts": "جميع المنتجات",

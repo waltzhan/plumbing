@@ -30,10 +30,10 @@
   "products": {
     "title": "สินค้าของเรา",
     "categories": {
-      "opticalSensor": "เซ็นเซอร์แสง",
-      "lightModule": "โมดูลแหล่งกำเนิดแสง",
-      "sterilizationModule": "โมดูลฆ่าเชื้อ",
-      "intelligentSensor": "การตรวจจับอัจฉริยะ"
+      "faucets": "ซีรีส์ก๊อกน้ำ",
+      "showers": "ระบบฝักบัว",
+      "bathroomAccessories": "อุปกรณ์ห้องน้ำ",
+      "plumbingParts": "อะไหล่ท่อประปา"
     },
     "viewDetails": "ดูรายละเอียด",
     "allProducts": "สินค้าทั้งหมด",
