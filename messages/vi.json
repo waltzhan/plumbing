@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "GOPRO LED - Nhà sản xuất LED chuyên nghiệp từ năm 1994",
-    "description": "Nhà sản xuất hàng đầu về IR LEDs, Visible Light LEDs và UV LEDs. Phục vụ hơn 50 quốc gia và khu vực trên toàn thế giới."
+    "title": "bojet - Nhà sản xuất thiết bị vệ sinh chuyên nghiệp từ năm 2005",
+    "description": "Nhà sản xuất hàng đầu về vòi nước, hệ thống vòi hoa sen, phụ kiện phòng tắm và giải pháp đường ống. Phục vụ hơn 30 quốc gia và khu vực trên toàn thế giới."
   },
   "navigation": {
     "home": "Trang chủ",
@@ -16,8 +16,8 @@
   },
   "hero": {
     "title": "Tạo dựng cuộc sống khỏe mạnh và thông minh",
-    "subtitle": "Từ năm 1994",
-    "description": "Nhà sản xuất LED chuyên nghiệp phục vụ hơn 50 quốc gia và khu vực trên toàn thế giới với các giải pháp IR, Visible Light và UV LED.",
+    "subtitle": "Từ năm 2005",
+    "description": "Nhà sản xuất thiết bị vệ sinh chuyên nghiệp phục vụ hơn 30 quốc gia và khu vực trên toàn thế giới với vòi nước, hệ thống vòi hoa sen và giải pháp phòng tắm.",
     "ctaPrimary": "Khám phá sản phẩm",
     "ctaSecondary": "Liên hệ chúng tôi"
   },
@@ -50,7 +50,7 @@
   },
   "contact": {
     "title": "Liên hệ với chúng tôi",
-    "subtitle": "Có nhu cầu sản phẩm LED? Vui lòng điền vào biểu mẫu dưới đây, chúng tôi sẽ liên hệ với bạn sớm.",
+    "subtitle": "Có nhu cầu sản phẩm thiết bị vệ sinh? Vui lòng điền vào biểu mẫu dưới đây, chúng tôi sẽ liên hệ với bạn sớm.",
     "companyName": "Tên công ty",
     "contactName": "Người liên hệ",
     "email": "Email",
@@ -83,7 +83,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 Xiamen Guangpu Electronics Co., Ltd. Bảo lưu mọi quyền.",
+    "copyright": "© 2024 China.Nan'an Bojet Sanitary Ware Factory. Bảo lưu mọi quyền.",
     "quickLinks": "Liên kết nhanh",
     "contactUs": "Liên hệ chúng tôi",
     "address": "Địa chỉ",
@@ -93,7 +93,7 @@
     "phone": "Điện thoại",
     "followUs": "Theo dõi chúng tôi",
     "certifications": "Chứng nhận",
-    "description": "GOPRO Electronics, thành lập năm 1994, là nhà sản xuất LED chuyên nghiệp phục vụ hơn 50 quốc gia và khu vực trên toàn thế giới.",
+    "description": "China.Nan'an Bojet Sanitary Ware Factory, thành lập năm 2005, là nhà sản xuất thiết bị vệ sinh chuyên nghiệp phục vụ hơn 30 quốc gia và khu vực trên toàn thế giới.",
     "privacyPolicy": "Chính sách Bảo mật",
     "termsOfUse": "Điều khoản Sử dụng"
   },
