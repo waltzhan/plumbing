@@ -18,10 +18,10 @@ function getMessages(locale: string) {
 
 // 静态产品列表（用于询盘表单多选）
 const productOptions = [
-  { id: 'ir-led', name: { en: 'IR LED', zh: '红外LED', id: 'LED IR', th: 'LED อินฟราเรด', vi: 'LED Hồng ngoại', ar: 'LED الأشعة تحت الحمراء' } },
-  { id: 'visible-led', name: { en: 'Visible LED', zh: '可见光LED', id: 'LED Cahaya Terlihat', th: 'LED แสงที่มองเห็นได้', vi: 'LED Ánh sáng nhìn thấy', ar: 'LED الضوء المرئي' } },
-  { id: 'uv-led', name: { en: 'UV LED', zh: '紫外LED', id: 'LED UV', th: 'LED UV', vi: 'LED UV', ar: 'LED UV' } },
-  { id: 'other', name: { en: 'Other', zh: '其他', id: 'Lainnya', th: 'อื่นๆ', vi: 'Khác', ar: 'أخرى' } },
+  { id: 'faucets', name: { en: 'Faucets', zh: '水龙头', id: 'Keran', th: 'ก๊อกน้ำ', vi: 'Vòi nước', ar: 'الصنابير' } },
+  { id: 'shower-sets', name: { en: 'Shower Sets', zh: '淋浴套装', id: 'Set Shower', th: 'ชุดฝักบัว', vi: 'Bộ vòi sen', ar: 'أنظمة الدش' } },
+  { id: 'smart-toilet', name: { en: 'Smart Toilet', zh: '智能马桶', id: 'Toilet Pintar', th: 'สุขภัณฑ์อัจฉริยะ', vi: 'Bồn cầu thông minh', ar: 'المرحاض الذكي' } },
+  { id: 'other-bathroom', name: { en: 'Other Bathroom Products', zh: '其他卫浴产品', id: 'Produk Kamar Mandi Lainnya', th: 'ผลิตภัณฑ์ห้องน้ำอื่นๆ', vi: 'Sản phẩm phòng tắm khác', ar: 'منتجات الحمام الأخرى' } },
 ];
 
 export function generateStaticParams() {
@@ -87,9 +87,9 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
   // 地址根据语言切换
   const addressValue = locale === 'zh' 
-    ? '厦门火炬高新区（翔安）产业区民安大道1800-1812号' 
-    : 'No.1800-1812 Min\'an Avenue, Xiang\'an Torch High-tech Zone, Xiamen, China';
-  const emailValue = 'sales@ledcoreco.com';
+    ? '福建省南安市仑苍镇蔡西东路327号' 
+    : 'No.327 Caixi East Road, Lancang Town, Nan\'an City, Fujian Province, China';
+  const emailValue = 'sales@globalplumb.com';
 
   // 从翻译文件获取标签文本
   const t = (key: string) => {
@@ -197,6 +197,17 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                     <p className="font-medium text-gray-900">{labels.email}</p>
                     <p className="text-sm text-gray-600 mt-1">{labels.emailValue}</p>
                   </div>
+                </div>
+              </div>
+
+              {/* 资质认证 */}
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h4 className="font-medium text-gray-900 mb-3">{t('footer.certifications')}</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">CCC</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">UPC / cUPC</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">CE</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">CB</span>
                 </div>
               </div>
             </div>
