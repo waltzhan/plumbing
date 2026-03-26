@@ -1,9 +1,9 @@
 import { createClient } from '@sanity/client';
 import { createImageUrlBuilder } from '@sanity/image-url';
 
-// 硬编码 Sanity 配置，避免构建时环境变量问题
-const projectId = 'nckyp28c';
-const dataset = 'production';
+// 从环境变量读取 Sanity 配置
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'p23es0ex';
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
 const token = process.env.SANITY_API_TOKEN;
 
 export const sanityClient = createClient({
