@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-const messagesMap: Record<string, typeof enMessages> = {
+const messagesMap: Record<string, any> = {
   en: enMessages,
   zh: zhMessages,
   id: idMessages,

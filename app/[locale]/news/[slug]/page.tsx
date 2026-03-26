@@ -14,7 +14,7 @@ import thMessages from '@/messages/th.json';
 import viMessages from '@/messages/vi.json';
 import arMessages from '@/messages/ar.json';
 
-const messagesMap: Record<string, typeof enMessages> = {
+const messagesMap: Record<string, any> = {
   en: enMessages,
   zh: zhMessages,
   id: idMessages,
