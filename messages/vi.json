@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "title": "GOPRO LED - Nhà sản xuất LED chuyên nghiệp từ năm 1994",
+    "description": "Nhà sản xuất hàng đầu về IR LEDs, Visible Light LEDs và UV LEDs. Phục vụ hơn 50 quốc gia và khu vực trên toàn thế giới."
+  },
+  "navigation": {
+    "home": "Trang chủ",
+    "products": "Sản phẩm",
+    "solutions": "Giải pháp",
+    "about": "Về chúng tôi",
+    "support": "Hỗ trợ",
+    "contact": "Liên hệ",
+    "inquiry": "Yêu cầu báo giá",
+    "language": "Ngôn ngữ",
+    "news": "Tin tức"
+  },
+  "hero": {
+    "title": "Tạo dựng cuộc sống khỏe mạnh và thông minh",
+    "subtitle": "Từ năm 1994",
+    "description": "Nhà sản xuất LED chuyên nghiệp phục vụ hơn 50 quốc gia và khu vực trên toàn thế giới với các giải pháp IR, Visible Light và UV LED.",
+    "ctaPrimary": "Khám phá sản phẩm",
+    "ctaSecondary": "Liên hệ chúng tôi"
+  },
+  "trustBar": {
+    "years": "30+ năm",
+    "patents": "160+ bằng sáng chế",
+    "employees": "1200+ nhân viên",
+    "certifications": "Chứng nhận toàn cầu"
+  },
+  "products": {
+    "title": "Sản phẩm của chúng tôi",
+    "categories": {
+      "opticalSensor": "Cảm biến Quang học",
+      "lightModule": "Module Nguồn Sáng",
+      "sterilizationModule": "Module Khử khuẩn",
+      "intelligentSensor": "Cảm biến Thông minh"
+    },
+    "viewDetails": "Xem chi tiết",
+    "allProducts": "Tất cả sản phẩm",
+    "categoriesTitle": "Danh mục",
+    "noProducts": "Không có sản phẩm",
+    "targetMarkets": "Thị trường mục tiêu",
+    "specifications": "Thông số kỹ thuật",
+    "features": "Tính năng",
+    "applications": "Ứng dụng",
+    "downloadDatasheet": "Tải Datasheet",
+    "productNotFound": "Không tìm thấy sản phẩm",
+    "backToProducts": "Quay lại sản phẩm",
+    "model": "Mẫu"
+  },
+  "contact": {
+    "title": "Liên hệ với chúng tôi",
+    "subtitle": "Có nhu cầu sản phẩm LED? Vui lòng điền vào biểu mẫu dưới đây, chúng tôi sẽ liên hệ với bạn sớm.",
+    "companyName": "Tên công ty",
+    "contactName": "Người liên hệ",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "country": "Quốc gia/Khu vực",
+    "products": "Sản phẩm quan tâm",
+    "quantity": "Số lượng dự kiến",
+    "message": "Yêu cầu chi tiết",
+    "submit": "Gửi yêu cầu",
+    "required": "Bắt buộc",
+    "contactInfo": "Thông tin liên hệ",
+    "address": "Địa chỉ công ty",
+    "selectCountry": "Chọn Quốc gia/Khu vực",
+    "selectQuantity": "Chọn khoảng số lượng",
+    "placeholder": {
+      "email": "example@company.com",
+      "phone": "+84 123 456 789",
+      "message": "Vui lòng mô tả yêu cầu cụ thể của bạn, như kịch bản ứng dụng, yêu cầu kỹ thuật, thời gian giao hàng, v.v."
+    },
+    "submitStatus": {
+      "sending": "Đang gửi...",
+      "success": "Gửi thành công! Chúng tôi sẽ liên hệ với bạn sớm.",
+      "error": "Gửi thất bại. Vui lòng thử lại sau hoặc liên hệ qua điện thoại."
+    },
+    "quantityOptions": {
+      "1k-10k": "1,000 - 10,000 cái",
+      "10k-50k": "10,000 - 50,000 cái",
+      "50k-100k": "50,000 - 100,000 cái",
+      "100k+": "100,000+ cái"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Xiamen Guangpu Electronics Co., Ltd. Bảo lưu mọi quyền.",
+    "quickLinks": "Liên kết nhanh",
+    "contactUs": "Liên hệ chúng tôi",
+    "address": "Địa chỉ",
+    "addressValue": "Số 327 Đường Đông Thái Tây, Thị trấn Lam Thương, Thành phố Nam An, Tỉnh Phúc Kiến, Trung Quốc",
+    "email": "Email",
+    "emailValue": "sales@globalplumb.com",
+    "phone": "Điện thoại",
+    "followUs": "Theo dõi chúng tôi",
+    "certifications": "Chứng nhận",
+    "description": "GOPRO Electronics, thành lập năm 1994, là nhà sản xuất LED chuyên nghiệp phục vụ hơn 50 quốc gia và khu vực trên toàn thế giới.",
+    "privacyPolicy": "Chính sách Bảo mật",
+    "termsOfUse": "Điều khoản Sử dụng"
+  },
+  "about": {
+    "title": "Về Chúng Tôi",
+    "subtitle": "Nhà Lãnh Đạo Toàn Cầu về Đóng Gói Tiên Tiến Tích Hợp Quang Tử Bán Dẫn",
+    "hero": {
+      "vision": "Ánh Sáng · Chiếu Sáng Thế Giới, Vạn Vật · Kết Nối Tương Lai",
+      "mission": "Tạo Dựng Cuộc Sống Khỏe Mạnh và Thông Minh",
+      "values": "Sáng Tạo, Vị Tha, Chính Trực, Sức Khỏe, Đại Ái"
+    },
+    "history": {
+      "title": "Hành Trình Củả Chúng Tôi",
+      "chapter1": {
+        "period": "1994-2002",
+        "title": "Chuyển Giao Công Nghệ & Nền Tảng Địa Phương",
+        "desc": "Bắt đầu với công nghệ quang điện tử bán dẫn, phá vỡ rào cản kỹ thuật thị trường địa phương, và thúc đẩy thành tựu phòng thí nghiệm đến công nghiệp hóa"
+      },
+      "chapter2": {
+        "period": "2002-2017",
+        "title": "Đột Phá Công Nghệ & Dẫn Đầu Ngành",
+        "desc": "Thiết lập hệ thống R&D bốn cấp, tích lũy năm công nghệ cốt lõi, phát triển từ ngườii tham gia tiêu chuẩn nội địa thành ngườii tạo tiêu chuẩn quốc tế"
+      },
+      "chapter3": {
+        "period": "2017-2024",
+        "title": "IPO & Nâng Cấp Toàn Cầu",
+        "desc": "Niêm yết trên Sở Giao Dịch Chứng Khoán Thâm Quyến GEM năm 2017, xây dựng hệ thống vận hành China HQ + Sản Xuất Đông Nam Á + Bán Hàng Toàn Cầu"
+      },
+      "chapter4": {
+        "period": "2025+",
+        "title": "Tập Trung Chiến Lược & Phát Triển Tương Lai",
+        "desc": "Làm sâu sắc chiến lược Globalization 3.0, giải quyết công nghệ then chốt cho nhu cầu quốc gia, cung cấp giải pháp GOPRO cho kỷ nguyên AI"
+      }
+    },
+    "business": {
+      "title": "Lĩnh Vực Kinh Doanh Chính",
+      "products": "Cảm Biến Quang, Module Nguồn Sáng, Module Khử Trùng, Cảm Biến Thông Minh",
+      "fields": "Lĩnh Vực Ứng Dụng",
+      "fieldsDesc": "Kinh Tế Độ Cao Thấp, Lái Xe Thông Minh, AI, Robot, Thiết Bị Đeo Thông Minh, Chiếu Sáng LED, Khuôn Viên Sức Khỏe, Quản Lý Carbon, Khử Trùng Vật Lý"
+    },
+    "technology": {
+      "title": "Lợi Thế Công Nghệ",
+      "rdTeam": "300+ Nhân Sự R&D",
+      "rdRatio": "Đội Ngũ R&D >20%",
+      "patents": "500+ Đơn Đăng Ký Bằng Sáng Chế",
+      "certifications": "1800+ Chứng Nhận Quốc Tế",
+      "coreTech": "Năm Công Nghệ Cốt Lõi",
+      "techList": "Cảm Biến Bán Dẫn, Quang Học Bán Dẫn, Vật Liệu Linh Hoạt, Truyền Thông IoT, Công Nghệ AIoT"
+    },
+    "global": {
+      "title": "Hiện Diện Toàn Cầu",
+      "coverage": "Kinh Doanh tại 50+ Quốc Gia & Vùng Lãnh Thổ",
+      "branches": "25 Chi Nhánh",
+      "rdBases": "8 Cơ Sở R&D",
+      "production": "Hai Cơ Sở Sản Xuất Thông Minh tại Trung Quốc và Malaysia"
+    },
+    "honors": {
+      "title": "Danh Hiệu & Chứng Chỉ",
+      "national": "Giải Nhất Tiến Bộ Khoa Học & Công Nghệ Quốc Gia",
+      "highTech": "Doanh Nghiệp Công Nghệ Cao",
+      "specialized": "Doanh Nghiệp 'Tiểu Cự Long' Chuyên Môn & Đổi Mới",
+      "top10": "Top 10 Năng Lực Cạnh Tranh Quốc Tế Doanh Nghiệp Chiếu Sáng LED Trung Quốc"
+    },
+    "culture": {
+      "title": "Văn Hóa Doanh Nghiệp",
+      "brand": "Công Nghệ Với Tình Yêu",
+      "management": "Tỉ Mỉ, Tiết Kiệm, Quản Lý Tinh Gọn",
+      "team": "Hiểu Nhau · Vui Vẻ · Đoàn Kết · Cùng Thắng",
+      "esg": "ESG & Phát Triển Bền Vững",
+      "esgDesc": "Trở thành nhà lãnh đạo ngành trong phát triển bền vững, thúc đẩy bảo vệ môi trường và phát triển xanh carbon thấp thông qua quản lý chuỗi cung ứng xanh"
+    }
+  },
+  "news": {
+    "title": "Tin tức",
+    "subtitle": "Cập nhật thông tin mới nhất về xu hướng ngành LED, bài viết kỹ thuật và trường hợp ứng dụng",
+    "allCategories": "Tất cả",
+    "readMore": "Đọc thêm",
+    "minRead": "phút đọc",
+    "noArticles": "Không có bài viết",
+    "noContent": "Không có nội dung",
+    "source": "Nguồn",
+    "relatedArticles": "Bài viết liên quan",
+    "categories": {
+      "industry": "Tin ngành",
+      "technical": "Bài viết kỹ thuật",
+      "application": "Trường hợp ứng dụng"
+    }
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "retry": "Thử lại",
+    "close": "Đóng",
+    "open": "Mở",
+    "search": "Tìm kiếm",
+    "filter": "Lọc",
+    "sort": "Sắp xếp",
+    "new": "Mới",
+    "popular": "Phổ biến",
+    "learnMore": "Tìm hiểu thêm",
+    "language": "Ngôn ngữ"
+  }
+}

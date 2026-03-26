@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "title": "博杰卫浴 - 专业水暖卫浴制造商",
+    "description": "高品质水龙头、淋浴系统、卫浴配件和管道解决方案的领先制造商。服务全球30多个国家和地区。"
+  },
+  "navigation": {
+    "home": "首页",
+    "products": "产品中心",
+    "solutions": "解决方案",
+    "about": "关于我们",
+    "support": "技术支持",
+    "contact": "联系我们",
+    "inquiry": "获取报价",
+    "language": "语言",
+    "news": "资讯中心"
+  },
+  "hero": {
+    "title": "精工品质 润泽生活",
+    "subtitle": "始于2005年",
+    "description": "专业水暖卫浴制造商，为全球30多个国家和地区提供高品质水龙头、淋浴系统和卫浴解决方案。",
+    "ctaPrimary": "浏览产品",
+    "ctaSecondary": "联系我们"
+  },
+  "trustBar": {
+    "years": "20+ 年",
+    "patents": "80+ 项专利",
+    "employees": "800+ 员工",
+    "certifications": "全球认证"
+  },
+  "products": {
+    "title": "我们的产品",
+    "categories": {
+      "faucets": "水龙头系列",
+      "showers": "淋浴系统",
+      "bathroomAccessories": "卫浴配件",
+      "plumbingParts": "管道配件"
+    },
+    "viewDetails": "查看详情",
+    "allProducts": "全部产品",
+    "categoriesTitle": "产品分类",
+    "noProducts": "暂无产品",
+    "targetMarkets": "目标市场",
+    "specifications": "技术规格",
+    "features": "产品特性",
+    "applications": "应用场景",
+    "downloadDatasheet": "下载数据手册",
+    "productNotFound": "产品未找到",
+    "backToProducts": "返回产品列表",
+    "model": "型号"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "有LED产品需求？请填写以下表单，我们将尽快与您联系。",
+    "companyName": "公司名称",
+    "contactName": "联系人姓名",
+    "email": "电子邮箱",
+    "phone": "联系电话",
+    "country": "国家/地区",
+    "products": "感兴趣的产品",
+    "quantity": "预计采购数量",
+    "message": "详细需求描述",
+    "submit": "提交询盘",
+    "required": "必填",
+    "contactInfo": "联系信息",
+    "address": "公司地址",
+    "selectCountry": "请选择国家/地区",
+    "selectQuantity": "请选择数量范围",
+    "placeholder": {
+      "email": "example@company.com",
+      "phone": "+60 123 456 789",
+      "message": "请描述您的具体需求，如应用场景、技术要求、交付时间等..."
+    },
+    "submitStatus": {
+      "sending": "提交中...",
+      "success": "提交成功！我们将尽快与您联系。",
+      "error": "提交失败，请稍后重试或电话联系。"
+    },
+    "quantityOptions": {
+      "1k-10k": "1,000 - 10,000 件",
+      "10k-50k": "10,000 - 50,000 件",
+      "50k-100k": "50,000 - 100,000 件",
+      "100k+": "100,000+ 件"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 厦门光莆电子股份有限公司 版权所有",
+    "quickLinks": "快速链接",
+    "contactUs": "联系我们",
+    "address": "地址",
+    "addressValue": "福建省南安市仑苍镇蔡西东路327号",
+    "email": "邮箱",
+    "emailValue": "sales@globalplumb.com",
+    "phone": "电话",
+    "followUs": "关注我们",
+    "certifications": "资质认证",
+    "description": "光莆电子成立于1994年，是专业的LED制造商，产品涵盖红外LED、可见光LED和紫外LED，服务全球50多个国家和地区。",
+    "privacyPolicy": "隐私政策",
+    "termsOfUse": "使用条款"
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "全球半导体光子集成先进封装领军者",
+    "hero": {
+      "vision": "光·莆照世界 物·链接未来",
+      "mission": "创造健康智慧的生活",
+      "values": "创造、利他、诚信、健康、大爱"
+    },
+    "history": {
+      "title": "发展历程",
+      "chapter1": {
+        "period": "1994-2002",
+        "title": "技术转化与本土奠基",
+        "desc": "以半导体光电技术为起点，突破本土市场技术与应用瓶颈，推动实验室成果走向产业化"
+      },
+      "chapter2": {
+        "period": "2002-2017",
+        "title": "技术突破与行业引领",
+        "desc": "建立四级研发体系，沉淀五大核心技术，从国内标准参与者到国际标准制定者的跨越"
+      },
+      "chapter3": {
+        "period": "2017-2024",
+        "title": "上市与全球化升级",
+        "desc": "2017年登陆深交所创业板，构建中国总部+东南亚制造+全球销售运营体系"
+      },
+      "chapter4": {
+        "period": "2025+",
+        "title": "战略聚焦与未来发展",
+        "desc": "深化全球化3.0战略，围绕国家需要攻克关键技术，为AI时代提供光莆解决方案"
+      }
+    },
+    "business": {
+      "title": "核心业务",
+      "products": "光传感器、光源模组、消杀模组、智能传感",
+      "fields": "应用领域",
+      "fieldsDesc": "低空经济、智能驾驶、人工智能、机器人、智能穿戴、LED照明、健康校园、能碳管理、物理消毒"
+    },
+    "technology": {
+      "title": "技术优势",
+      "rdTeam": "300+ 研发人员",
+      "rdRatio": "研发人员占比超20%",
+      "patents": "500+ 专利申请",
+      "certifications": "1800+ 产品国际认证",
+      "coreTech": "五大核心技术",
+      "techList": "半导体传感技术、半导体光技术、柔性材料技术、物联通讯技术、AIoT人工智能技术"
+    },
+    "global": {
+      "title": "全球布局",
+      "coverage": "业务覆盖50+国家和地区",
+      "branches": "25家分支机构",
+      "rdBases": "8大研发基地",
+      "production": "中国、马来西亚两大智能化生产基地"
+    },
+    "honors": {
+      "title": "荣誉资质",
+      "national": "国家科技进步一等奖",
+      "highTech": "高新技术企业",
+      "specialized": "专精特新小巨人企业",
+      "top10": "中国LED照明企业国际竞争力TOP10"
+    },
+    "culture": {
+      "title": "企业文化",
+      "brand": "科技有爱",
+      "management": "精雕细琢、精打细算、精细化管理",
+      "team": "知己·悦人·齐心·共赢",
+      "esg": "ESG与可持续发展",
+      "esgDesc": "成为行业可持续发展的领导者，以绿色供应链管理推动环保和绿色低碳发展"
+    }
+  },
+  "news": {
+    "title": "资讯中心",
+    "subtitle": "了解LED行业最新动态、技术文章和产品应用案例",
+    "allCategories": "全部",
+    "readMore": "阅读更多",
+    "minRead": "分钟阅读",
+    "noArticles": "暂无文章",
+    "noContent": "暂无内容",
+    "source": "文章来源",
+    "relatedArticles": "相关文章",
+    "categories": {
+      "industry": "行业动态",
+      "technical": "技术文章",
+      "application": "应用案例"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "close": "关闭",
+    "open": "打开",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "new": "新品",
+    "popular": "热门",
+    "learnMore": "了解更多",
+    "language": "语言"
+  }
+}

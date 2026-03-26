@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "title": "GOPRO LED - Produsen LED Profesional Sejak 1994",
+    "description": "Produsen terkemuka LED IR, LED Cahaya Terlihat, dan LED UV. Melayani lebih dari 50 negara dan wilayah di seluruh dunia."
+  },
+  "navigation": {
+    "home": "Beranda",
+    "products": "Produk",
+    "solutions": "Solusi",
+    "about": "Tentang Kami",
+    "support": "Dukungan",
+    "contact": "Kontak",
+    "inquiry": "Minta Penawaran",
+    "language": "Bahasa",
+    "news": "Pusat Berita"
+  },
+  "hero": {
+    "title": "Menciptakan Hidup Sehat dan Cerdas",
+    "subtitle": "Sejak 1994",
+    "description": "Produsen LED profesional yang melayani lebih dari 50 negara dan wilayah di seluruh dunia dengan solusi LED IR, Cahaya Terlihat, dan UV.",
+    "ctaPrimary": "Jelajahi Produk",
+    "ctaSecondary": "Hubungi Kami"
+  },
+  "trustBar": {
+    "years": "30+ Tahun",
+    "patents": "160+ Paten",
+    "employees": "1200+ Karyawan",
+    "certifications": "Sertifikasi Global"
+  },
+  "products": {
+    "title": "Produk Kami",
+    "categories": {
+      "opticalSensor": "Sensor Optik",
+      "lightModule": "Modul Sumber Cahaya",
+      "sterilizationModule": "Modul Sterilisasi",
+      "intelligentSensor": "Sensor Cerdas"
+    },
+    "viewDetails": "Lihat Detail",
+    "allProducts": "Semua Produk",
+    "categoriesTitle": "Kategori",
+    "noProducts": "Tidak ada produk",
+    "targetMarkets": "Pasar Target",
+    "specifications": "Spesifikasi",
+    "features": "Fitur",
+    "applications": "Aplikasi",
+    "downloadDatasheet": "Unduh Datasheet",
+    "productNotFound": "Produk Tidak Ditemukan",
+    "backToProducts": "Kembali ke Produk",
+    "model": "Model"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Punya kebutuhan produk LED? Silakan isi formulir di bawah dan kami akan segera menghubungi Anda.",
+    "companyName": "Nama Perusahaan",
+    "contactName": "Nama Kontak",
+    "email": "Email",
+    "phone": "Nomor Telepon",
+    "country": "Negara/Wilayah",
+    "products": "Produk yang Diminati",
+    "quantity": "Perkiraan Kuantitas",
+    "message": "Deskripsi Kebutuhan Detail",
+    "submit": "Kirim Permintaan",
+    "required": "Wajib",
+    "contactInfo": "Informasi Kontak",
+    "address": "Alamat Perusahaan",
+    "selectCountry": "Pilih Negara/Wilayah",
+    "selectQuantity": "Pilih Rentang Kuantitas",
+    "placeholder": {
+      "email": "example@company.com",
+      "phone": "+60 123 456 789",
+      "message": "Silakan jelaskan kebutuhan spesifik Anda, seperti skenario aplikasi, persyaratan teknis, waktu pengiriman, dll."
+    },
+    "submitStatus": {
+      "sending": "Mengirim...",
+      "success": "Berhasil dikirim! Kami akan segera menghubungi Anda.",
+      "error": "Pengiriman gagal. Silakan coba lagi nanti atau hubungi kami melalui telepon."
+    },
+    "quantityOptions": {
+      "1k-10k": "1,000 - 10,000 pcs",
+      "10k-50k": "10,000 - 50,000 pcs",
+      "50k-100k": "50,000 - 100,000 pcs",
+      "100k+": "100,000+ pcs"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Xiamen Guangpu Electronics Co., Ltd. Hak cipta dilindungi.",
+    "quickLinks": "Tautan Cepat",
+    "contactUs": "Hubungi Kami",
+    "address": "Alamat",
+    "addressValue": "No.327 Jalan Timur Caixi, Kecamatan Lancang, Kota Nan'an, Provinsi Fujian, Tiongkok",
+    "email": "Email",
+    "emailValue": "sales@globalplumb.com",
+    "phone": "Telepon",
+    "followUs": "Ikuti Kami",
+    "certifications": "Sertifikasi",
+    "description": "GOPRO Electronics, didirikan tahun 1994, adalah produsen LED profesional yang melayani lebih dari 50 negara dan wilayah di seluruh dunia.",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfUse": "Syarat Penggunaan"
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "subtitle": "Pemimpin Global dalam Pengemasan Canggih Integrasi Fotonik Semikonduktor",
+    "hero": {
+      "vision": "Cahaya · Menerangi Dunia, Benda · Menghubungkan Masa Depan",
+      "mission": "Menciptakan Kehidupan Sehat dan Cerdas",
+      "values": "Kreasi, Altruisme, Integritas, Kesehatan, Cinta Besar"
+    },
+    "history": {
+      "title": "Perjalanan Kami",
+      "chapter1": {
+        "period": "1994-2002",
+        "title": "Transfer Teknologi & Fondasi Lokal",
+        "desc": "Dimulai dengan teknologi optoelektronik semikonduktor, menerobos hambatan teknis pasar lokal, dan mendorong pencapaian laboratorium ke industrialisasi"
+      },
+      "chapter2": {
+        "period": "2002-2017",
+        "title": "Terobosan Teknologi & Kepemimpinan Industri",
+        "desc": "Membangun sistem R&D empat tingkat, mengakumulasi lima teknologi inti, berevolusi dari peserta standar domestik menjadi pembuat standar internasional"
+      },
+      "chapter3": {
+        "period": "2017-2024",
+        "title": "IPO & Peningkatan Globalisasi",
+        "desc": "Terdaftar di Bursa Efek Shenzhen GEM pada 2017, membangun sistem operasi China HQ + Manufaktur Asia Tenggara + Penjualan Global"
+      },
+      "chapter4": {
+        "period": "2025+",
+        "title": "Fokus Strategis & Pengembangan Masa Depan",
+        "desc": "Memperdalam strategi Globalisasi 3.0, mengatasi teknologi kunci untuk kebutuhan nasional, menyediakan solusi GOPRO untuk era AI"
+      }
+    },
+    "business": {
+      "title": "Bisnis Inti",
+      "products": "Sensor Optik, Modul Sumber Cahaya, Modul Sterilisasi, Sensor Cerdas",
+      "fields": "Bidang Aplikasi",
+      "fieldsDesc": "Ekonomi Ketinggian Rendah, Mengemudi Cerdas, AI, Robotika, Wearable Pintar, Pencahayaan LED, Kampus Sehat, Manajemen Karbon, Desinfeksi Fisik"
+    },
+    "technology": {
+      "title": "Keunggulan Teknologi",
+      "rdTeam": "300+ Personil R&D",
+      "rdRatio": "Tim R&D >20%",
+      "patents": "500+ Aplikasi Paten",
+      "certifications": "1800+ Sertifikasi Internasional",
+      "coreTech": "Lima Teknologi Inti",
+      "techList": "Sensor Semikonduktor, Optik Semikonduktor, Material Fleksibel, Komunikasi IoT, Teknologi AIoT"
+    },
+    "global": {
+      "title": "Kehadiran Global",
+      "coverage": "Bisnis di 50+ Negara & Wilayah",
+      "branches": "25 Kantor Cabang",
+      "rdBases": "8 Basis R&D",
+      "production": "Dua Basis Produksi Cerdas di China & Malaysia"
+    },
+    "honors": {
+      "title": "Penghargaan & Kualifikasi",
+      "national": "Hadiah Utama Kemajuan Sains & Teknologi Nasional",
+      "highTech": "Perusahaan Teknologi Tinggi",
+      "specialized": "Perusahaan 'Raksasa Kecil' Spesialis & Inovatif",
+      "top10": "10 Besar Daya Saing Internasional Pencahayaan LED China"
+    },
+    "culture": {
+      "title": "Budaya Perusahaan",
+      "brand": "Teknologi dengan Cinta",
+      "management": "Teliti, Ekonomis, Manajemen Baik",
+      "team": "Memahami · Menyenangkan · Bersatu · Menang Bersama",
+      "esg": "ESG & Pengembangan Berkelanjutan",
+      "esgDesc": "Menjadi pemimpin industri dalam pengembangan berkelanjutan, mendorong perlindungan lingkungan dan pengembangan hijau rendah karbon melalui manajemen rantai pasok hijau"
+    }
+  },
+  "news": {
+    "title": "Pusat Berita",
+    "subtitle": "Dapatkan informasi terbaru tentang tren industri LED, artikel teknis, dan kasus aplikasi",
+    "allCategories": "Semua",
+    "readMore": "Baca Selengkapnya",
+    "minRead": "menit baca",
+    "noArticles": "Tidak ada artikel",
+    "noContent": "Konten tidak tersedia",
+    "source": "Sumber",
+    "relatedArticles": "Artikel Terkait",
+    "categories": {
+      "industry": "Berita Industri",
+      "technical": "Artikel Teknis",
+      "application": "Kasus Aplikasi"
+    }
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "retry": "Coba Lagi",
+    "close": "Tutup",
+    "open": "Buka",
+    "search": "Cari",
+    "filter": "Filter",
+    "sort": "Urutkan",
+    "new": "Baru",
+    "popular": "Populer",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "language": "Bahasa"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "title": "bojet - Professional Plumbing & Bathroom Manufacturer",
+    "description": "Leading manufacturer of high-quality faucets, shower systems, bathroom accessories and plumbing solutions. Serving over 30 countries and regions worldwide."
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "support": "Support",
+    "contact": "Contact",
+    "inquiry": "Request Quote",
+    "language": "Language",
+    "news": "News Center"
+  },
+  "hero": {
+    "title": "Crafting Quality, Enriching Life",
+    "subtitle": "Since 2005",
+    "description": "Professional plumbing and bathroom manufacturer serving over 30 countries and regions worldwide with high-quality faucets, shower systems and bathroom solutions.",
+    "ctaPrimary": "Explore Products",
+    "ctaSecondary": "Contact Us"
+  },
+  "trustBar": {
+    "years": "20+ Years",
+    "patents": "80+ Patents",
+    "employees": "800+ Employees",
+    "certifications": "Global Certifications"
+  },
+  "products": {
+    "title": "Our Products",
+    "categories": {
+      "faucets": "Faucet Series",
+      "showers": "Shower Systems",
+      "bathroomAccessories": "Bathroom Accessories",
+      "plumbingParts": "Plumbing Parts"
+    },
+    "viewDetails": "View Details",
+    "allProducts": "All Products",
+    "categoriesTitle": "Categories",
+    "noProducts": "No products available",
+    "targetMarkets": "Target Markets",
+    "specifications": "Specifications",
+    "features": "Features",
+    "applications": "Applications",
+    "downloadDatasheet": "Download Datasheet",
+    "productNotFound": "Product Not Found",
+    "backToProducts": "Back to Products",
+    "model": "Model"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have LED product needs? Please fill out the form below and we will contact you soon.",
+    "companyName": "Company Name",
+    "contactName": "Contact Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "country": "Country/Region",
+    "products": "Products of Interest",
+    "quantity": "Estimated Quantity",
+    "message": "Detailed Requirements",
+    "submit": "Submit Inquiry",
+    "required": "Required",
+    "contactInfo": "Contact Information",
+    "address": "Company Address",
+    "selectCountry": "Select Country/Region",
+    "selectQuantity": "Select Quantity Range",
+    "placeholder": {
+      "email": "example@company.com",
+      "phone": "+60 123 456 789",
+      "message": "Please describe your specific requirements, such as application scenarios, technical requirements, delivery time, etc."
+    },
+    "submitStatus": {
+      "sending": "Submitting...",
+      "success": "Submitted successfully! We will contact you soon.",
+      "error": "Submission failed. Please try again later or contact us by phone."
+    },
+    "quantityOptions": {
+      "1k-10k": "1,000 - 10,000 pcs",
+      "10k-50k": "10,000 - 50,000 pcs",
+      "50k-100k": "50,000 - 100,000 pcs",
+      "100k+": "100,000+ pcs"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Xiamen Guangpu Electronics Co., Ltd. All rights reserved.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "address": "Address",
+    "addressValue": "No.327 Caixi East Road, Lancang Town, Nan'an City, Fujian Province, China",
+    "email": "Email",
+    "emailValue": "sales@globalplumb.com",
+    "phone": "Phone",
+    "followUs": "Follow Us",
+    "certifications": "Certifications",
+    "description": "GOPRO Electronics, founded in 1994, is a professional LED manufacturer serving over 50 countries and regions worldwide.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Global Leader in Semiconductor Photonic Integration Advanced Packaging",
+    "hero": {
+      "vision": "Light · Illuminating the World, Things · Connecting the Future",
+      "mission": "Creating Healthy and Smart Life",
+      "values": "Creation, Altruism, Integrity, Health, Great Love"
+    },
+    "history": {
+      "title": "Our Journey",
+      "chapter1": {
+        "period": "1994-2002",
+        "title": "Technology Transfer & Local Foundation",
+        "desc": "Starting with semiconductor optoelectronics technology, breaking through local market technical barriers, and promoting laboratory achievements to industrialization"
+      },
+      "chapter2": {
+        "period": "2002-2017",
+        "title": "Technology Breakthrough & Industry Leadership",
+        "desc": "Established four-level R&D system, accumulated five core technologies, evolving from domestic standard participant to international standard maker"
+      },
+      "chapter3": {
+        "period": "2017-2024",
+        "title": "IPO & Globalization Upgrade",
+        "desc": "Listed on Shenzhen Stock Exchange GEM in 2017, building China HQ + SE Asia Manufacturing + Global Sales operation system"
+      },
+      "chapter4": {
+        "period": "2025+",
+        "title": "Strategic Focus & Future Development",
+        "desc": "Deepening Globalization 3.0 strategy, tackling key technologies for national needs, providing GOPRO solutions for the AI era"
+      }
+    },
+    "business": {
+      "title": "Core Business",
+      "products": "Optical Sensors, Light Source Modules, Sterilization Modules, Intelligent Sensing",
+      "fields": "Application Fields",
+      "fieldsDesc": "Low-altitude Economy, Intelligent Driving, AI, Robotics, Smart Wearables, LED Lighting, Healthy Campus, Carbon Management, Physical Disinfection"
+    },
+    "technology": {
+      "title": "Technology Advantage",
+      "rdTeam": "300+ R&D Personnel",
+      "rdRatio": "R&D Team >20%",
+      "patents": "500+ Patent Applications",
+      "certifications": "1800+ International Certifications",
+      "coreTech": "Five Core Technologies",
+      "techList": "Semiconductor Sensing, Semiconductor Optics, Flexible Materials, IoT Communication, AIoT Technology"
+    },
+    "global": {
+      "title": "Global Presence",
+      "coverage": "Business in 50+ Countries & Regions",
+      "branches": "25 Branch Offices",
+      "rdBases": "8 R&D Bases",
+      "production": "Two Intelligent Production Bases in China & Malaysia"
+    },
+    "honors": {
+      "title": "Honors & Qualifications",
+      "national": "National Science & Technology Progress First Prize",
+      "highTech": "High-Tech Enterprise",
+      "specialized": "Specialized & Innovative 'Little Giant' Enterprise",
+      "top10": "China LED Lighting Top 10 International Competitiveness"
+    },
+    "culture": {
+      "title": "Corporate Culture",
+      "brand": "Technology with Love",
+      "management": "Meticulous, Economical, Fine Management",
+      "team": "Understanding · Delighting · Uniting · Winning Together",
+      "esg": "ESG & Sustainable Development",
+      "esgDesc": "Become an industry leader in sustainable development, promoting environmental protection and green low-carbon development through green supply chain management"
+    }
+  },
+  "news": {
+    "title": "News Center",
+    "subtitle": "Stay updated with the latest LED industry trends, technical articles, and application cases",
+    "allCategories": "All",
+    "readMore": "Read More",
+    "minRead": "min read",
+    "noArticles": "No articles found",
+    "noContent": "No content available",
+    "source": "Source",
+    "relatedArticles": "Related Articles",
+    "categories": {
+      "industry": "Industry News",
+      "technical": "Technical Articles",
+      "application": "Application Cases"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "open": "Open",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "new": "New",
+    "popular": "Popular",
+    "learnMore": "Learn More",
+    "language": "Language"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "gopro-trade-cms",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sanity dev --port 3333",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "@sanity/vision": "^5.13.0",
+    "sanity": "^5.13.0",
+    "styled-components": "^6.3.11"
+  }
+}
