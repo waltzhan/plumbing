@@ -25,5 +25,10 @@ export function urlFor(source: any) {
 
 export function urlForImage(source: any): string {
   if (!source) return '';
-  return builder.image(source).url();
+  try {
+    return builder.image(source).url();
+  } catch (error) {
+    console.error('Error generating image URL:', error);
+    return '';
+  }
 }

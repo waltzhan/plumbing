@@ -1,0 +1,2106 @@
+[
+  {
+    "fields": [
+      {
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "zh",
+            "type": "string",
+            "title": "中文"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "en",
+            "type": "string",
+            "title": "English"
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "name": "th",
+            "type": "string",
+            "title": "ภาษาไทย"
+          },
+          {
+            "name": "vi",
+            "type": "string",
+            "title": "Tiếng Việt"
+          },
+          {
+            "name": "ar",
+            "type": "string",
+            "title": "العربية"
+          }
+        ],
+        "name": "name",
+        "type": "object",
+        "title": "产品名称 (前端显示)"
+      },
+      {
+        "fields": [
+          {
+            "name": "zh",
+            "type": "string",
+            "title": "中文"
+          },
+          {
+            "name": "en",
+            "type": "string",
+            "title": "English"
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "name": "th",
+            "type": "string",
+            "title": "ภาษาไทย"
+          },
+          {
+            "name": "vi",
+            "type": "string",
+            "title": "Tiếng Việt"
+          },
+          {
+            "name": "ar",
+            "type": "string",
+            "title": "العربية"
+          }
+        ],
+        "hidden": true,
+        "name": "title",
+        "type": "object",
+        "title": "产品名称 (兼容字段)"
+      },
+      {
+        "options": {
+          "source": "name.zh",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug",
+        "title": "URL 别名"
+      },
+      {
+        "description": "用于前端显示的产品型号",
+        "name": "model",
+        "type": "string",
+        "title": "产品型号"
+      },
+      {
+        "fields": [
+          {
+            "name": "zh",
+            "type": "text",
+            "title": "中文"
+          },
+          {
+            "name": "en",
+            "type": "text",
+            "title": "English"
+          },
+          {
+            "name": "id",
+            "type": "text",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "name": "th",
+            "type": "text",
+            "title": "ภาษาไทย"
+          },
+          {
+            "name": "vi",
+            "type": "text",
+            "title": "Tiếng Việt"
+          },
+          {
+            "name": "ar",
+            "type": "text",
+            "title": "العربية"
+          }
+        ],
+        "name": "description",
+        "type": "object",
+        "title": "产品描述"
+      },
+      {
+        "fields": [
+          {
+            "name": "zh",
+            "type": "string",
+            "title": "中文"
+          },
+          {
+            "name": "en",
+            "type": "string",
+            "title": "English"
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "name": "th",
+            "type": "string",
+            "title": "ภาษาไทย"
+          },
+          {
+            "name": "vi",
+            "type": "string",
+            "title": "Tiếng Việt"
+          },
+          {
+            "name": "ar",
+            "type": "string",
+            "title": "العربية"
+          }
+        ],
+        "name": "shortDescription",
+        "type": "object",
+        "title": "简短描述"
+      },
+      {
+        "to": [
+          {
+            "type": "productCategory"
+          }
+        ],
+        "name": "category",
+        "type": "reference",
+        "title": "产品分类"
+      },
+      {
+        "name": "sku",
+        "type": "string",
+        "title": "产品型号"
+      },
+      {
+        "name": "price",
+        "type": "number",
+        "title": "价格"
+      },
+      {
+        "name": "compareAtPrice",
+        "type": "number",
+        "title": "原价"
+      },
+      {
+        "initialValue": "USD",
+        "name": "currency",
+        "type": "string",
+        "title": "货币"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "description": "产品列表页显示的主图",
+        "name": "mainImage",
+        "type": "image",
+        "title": "主图"
+      },
+      {
+        "description": "产品详情页显示的图集",
+        "of": [
+          {
+            "options": {
+              "hotspot": true
+            },
+            "type": "image"
+          }
+        ],
+        "name": "gallery",
+        "type": "array",
+        "title": "产品图集 (前端显示)"
+      },
+      {
+        "of": [
+          {
+            "options": {
+              "hotspot": true
+            },
+            "type": "image"
+          }
+        ],
+        "hidden": true,
+        "name": "images",
+        "type": "array",
+        "title": "产品图集 (原始)"
+      },
+      {
+        "fields": [
+          {
+            "name": "material",
+            "type": "string",
+            "title": "材质"
+          },
+          {
+            "name": "finish",
+            "type": "string",
+            "title": "表面处理"
+          },
+          {
+            "name": "color",
+            "type": "string",
+            "title": "颜色"
+          },
+          {
+            "name": "size",
+            "type": "string",
+            "title": "尺寸"
+          },
+          {
+            "name": "weight",
+            "type": "string",
+            "title": "重量"
+          },
+          {
+            "name": "installation",
+            "type": "string",
+            "title": "安装方式"
+          },
+          {
+            "name": "certification",
+            "type": "string",
+            "title": "认证"
+          }
+        ],
+        "name": "specifications",
+        "type": "object",
+        "title": "产品规格参数"
+      },
+      {
+        "fields": [
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "zh",
+            "type": "array",
+            "title": "中文"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "en",
+            "type": "array",
+            "title": "English"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "id",
+            "type": "array",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "th",
+            "type": "array",
+            "title": "ภาษาไทย"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "vi",
+            "type": "array",
+            "title": "Tiếng Việt"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "ar",
+            "type": "array",
+            "title": "العربية"
+          }
+        ],
+        "name": "features",
+        "type": "object",
+        "title": "产品特性"
+      },
+      {
+        "fields": [
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "zh",
+            "type": "array",
+            "title": "中文"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "en",
+            "type": "array",
+            "title": "English"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "id",
+            "type": "array",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "th",
+            "type": "array",
+            "title": "ภาษาไทย"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "vi",
+            "type": "array",
+            "title": "Tiếng Việt"
+          },
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "ar",
+            "type": "array",
+            "title": "العربية"
+          }
+        ],
+        "name": "applications",
+        "type": "object",
+        "title": "应用场景"
+      },
+      {
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "targetMarkets",
+        "type": "array",
+        "title": "目标市场"
+      },
+      {
+        "name": "datasheet",
+        "type": "file",
+        "title": "数据手册 (PDF)"
+      },
+      {
+        "initialValue": 100,
+        "name": "stock",
+        "type": "number",
+        "title": "库存数量"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "上架",
+              "value": "active"
+            },
+            {
+              "title": "下架",
+              "value": "inactive"
+            }
+          ]
+        },
+        "initialValue": "active",
+        "name": "status",
+        "type": "string",
+        "title": "状态"
+      },
+      {
+        "name": "publishedAt",
+        "type": "datetime",
+        "title": "发布时间"
+      }
+    ],
+    "name": "product",
+    "type": "document",
+    "title": "产品"
+  },
+  {
+    "fields": [
+      {
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "zh",
+            "type": "string",
+            "title": "中文"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "en",
+            "type": "string",
+            "title": "English"
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "name": "th",
+            "type": "string",
+            "title": "ภาษาไทย"
+          },
+          {
+            "name": "vi",
+            "type": "string",
+            "title": "Tiếng Việt"
+          },
+          {
+            "name": "ar",
+            "type": "string",
+            "title": "العربية"
+          }
+        ],
+        "name": "title",
+        "type": "object",
+        "title": "分类名称"
+      },
+      {
+        "options": {
+          "source": "title.zh",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug",
+        "title": "URL 别名"
+      },
+      {
+        "fields": [
+          {
+            "name": "zh",
+            "type": "text",
+            "title": "中文"
+          },
+          {
+            "name": "en",
+            "type": "text",
+            "title": "English"
+          },
+          {
+            "name": "id",
+            "type": "text",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "name": "th",
+            "type": "text",
+            "title": "ภาษาไทย"
+          },
+          {
+            "name": "vi",
+            "type": "text",
+            "title": "Tiếng Việt"
+          },
+          {
+            "name": "ar",
+            "type": "text",
+            "title": "العربية"
+          }
+        ],
+        "name": "description",
+        "type": "object",
+        "title": "分类描述"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "name": "image",
+        "type": "image",
+        "title": "分类图片"
+      },
+      {
+        "initialValue": 0,
+        "name": "order",
+        "type": "number",
+        "title": "排序"
+      }
+    ],
+    "name": "productCategory",
+    "type": "document",
+    "title": "产品分类"
+  },
+  {
+    "fields": [
+      {
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "zh",
+            "type": "string",
+            "title": "中文 (必填)"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "en",
+            "type": "string",
+            "title": "English (必填)"
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "name": "th",
+            "type": "string",
+            "title": "ภาษาไทย"
+          },
+          {
+            "name": "vi",
+            "type": "string",
+            "title": "Tiếng Việt"
+          },
+          {
+            "name": "ar",
+            "type": "string",
+            "title": "العربية"
+          }
+        ],
+        "name": "title",
+        "type": "object",
+        "title": "文章标题 (多语言)"
+      },
+      {
+        "options": {
+          "source": "title.zh",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug",
+        "title": "URL标识"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "to": [
+          {
+            "type": "articleCategory"
+          }
+        ],
+        "name": "category",
+        "type": "reference",
+        "title": "文章分类"
+      },
+      {
+        "description": "用于SEO的关键词标签，如：LED技术、智能传感、UV消毒等",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "tags",
+        "type": "array",
+        "title": "标签"
+      },
+      {
+        "description": "用于列表展示和Meta描述",
+        "fields": [
+          {
+            "rows": 2,
+            "name": "zh",
+            "type": "text",
+            "title": "中文"
+          },
+          {
+            "rows": 2,
+            "name": "en",
+            "type": "text",
+            "title": "English"
+          },
+          {
+            "rows": 2,
+            "name": "id",
+            "type": "text",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "rows": 2,
+            "name": "th",
+            "type": "text",
+            "title": "ภาษาไทย"
+          },
+          {
+            "rows": 2,
+            "name": "vi",
+            "type": "text",
+            "title": "Tiếng Việt"
+          },
+          {
+            "rows": 2,
+            "name": "ar",
+            "type": "text",
+            "title": "العربية"
+          }
+        ],
+        "name": "excerpt",
+        "type": "object",
+        "title": "文章摘要 (多语言)"
+      },
+      {
+        "fields": [
+          {
+            "of": [
+              {
+                "marks": {
+                  "annotations": [
+                    {
+                      "i18nTitleKey": "inputs.portable-text.annotation.link",
+                      "options": {
+                        "modal": {
+                          "type": "popover"
+                        }
+                      },
+                      "fields": [
+                        {
+                          "validation": [
+                            {
+                              "rules": [
+                                {
+                                  "flag": "uri",
+                                  "constraint": {
+                                    "options": {
+                                      "scheme": [
+                                        "/^http$/",
+                                        "/^https$/",
+                                        "/^tel$/",
+                                        "/^mailto$/"
+                                      ],
+                                      "allowRelative": true,
+                                      "relativeOnly": false,
+                                      "allowCredentials": false
+                                    }
+                                  }
+                                }
+                              ],
+                              "level": "error"
+                            }
+                          ],
+                          "description": "A valid web, email, phone, or relative link.",
+                          "name": "href",
+                          "type": "url",
+                          "title": "Link"
+                        }
+                      ],
+                      "name": "link",
+                      "type": "object"
+                    }
+                  ],
+                  "decorators": [
+                    {
+                      "value": "strong",
+                      "title": "Strong"
+                    },
+                    {
+                      "value": "em",
+                      "title": "Italic"
+                    },
+                    {
+                      "value": "code",
+                      "title": "Code"
+                    },
+                    {
+                      "value": "underline",
+                      "title": "Underline"
+                    },
+                    {
+                      "value": "strike-through",
+                      "title": "Strike"
+                    }
+                  ]
+                },
+                "lists": [
+                  {
+                    "value": "bullet",
+                    "title": "Bulleted list"
+                  },
+                  {
+                    "value": "number",
+                    "title": "Numbered list"
+                  }
+                ],
+                "styles": [
+                  {
+                    "value": "normal",
+                    "title": "Normal"
+                  },
+                  {
+                    "value": "h1",
+                    "title": "Heading 1"
+                  },
+                  {
+                    "value": "h2",
+                    "title": "Heading 2"
+                  },
+                  {
+                    "value": "h3",
+                    "title": "Heading 3"
+                  },
+                  {
+                    "value": "h4",
+                    "title": "Heading 4"
+                  },
+                  {
+                    "value": "h5",
+                    "title": "Heading 5"
+                  },
+                  {
+                    "value": "h6",
+                    "title": "Heading 6"
+                  },
+                  {
+                    "value": "blockquote",
+                    "title": "Quote"
+                  }
+                ],
+                "of": [],
+                "type": "block"
+              },
+              {
+                "options": {
+                  "hotspot": true
+                },
+                "type": "image"
+              }
+            ],
+            "name": "zh",
+            "type": "array",
+            "title": "中文"
+          },
+          {
+            "of": [
+              {
+                "marks": {
+                  "annotations": [
+                    {
+                      "i18nTitleKey": "inputs.portable-text.annotation.link",
+                      "options": {
+                        "modal": {
+                          "type": "popover"
+                        }
+                      },
+                      "fields": [
+                        {
+                          "validation": [
+                            {
+                              "rules": [
+                                {
+                                  "flag": "uri",
+                                  "constraint": {
+                                    "options": {
+                                      "scheme": [
+                                        "/^http$/",
+                                        "/^https$/",
+                                        "/^tel$/",
+                                        "/^mailto$/"
+                                      ],
+                                      "allowRelative": true,
+                                      "relativeOnly": false,
+                                      "allowCredentials": false
+                                    }
+                                  }
+                                }
+                              ],
+                              "level": "error"
+                            }
+                          ],
+                          "description": "A valid web, email, phone, or relative link.",
+                          "name": "href",
+                          "type": "url",
+                          "title": "Link"
+                        }
+                      ],
+                      "name": "link",
+                      "type": "object"
+                    }
+                  ],
+                  "decorators": [
+                    {
+                      "value": "strong",
+                      "title": "Strong"
+                    },
+                    {
+                      "value": "em",
+                      "title": "Italic"
+                    },
+                    {
+                      "value": "code",
+                      "title": "Code"
+                    },
+                    {
+                      "value": "underline",
+                      "title": "Underline"
+                    },
+                    {
+                      "value": "strike-through",
+                      "title": "Strike"
+                    }
+                  ]
+                },
+                "lists": [
+                  {
+                    "value": "bullet",
+                    "title": "Bulleted list"
+                  },
+                  {
+                    "value": "number",
+                    "title": "Numbered list"
+                  }
+                ],
+                "styles": [
+                  {
+                    "value": "normal",
+                    "title": "Normal"
+                  },
+                  {
+                    "value": "h1",
+                    "title": "Heading 1"
+                  },
+                  {
+                    "value": "h2",
+                    "title": "Heading 2"
+                  },
+                  {
+                    "value": "h3",
+                    "title": "Heading 3"
+                  },
+                  {
+                    "value": "h4",
+                    "title": "Heading 4"
+                  },
+                  {
+                    "value": "h5",
+                    "title": "Heading 5"
+                  },
+                  {
+                    "value": "h6",
+                    "title": "Heading 6"
+                  },
+                  {
+                    "value": "blockquote",
+                    "title": "Quote"
+                  }
+                ],
+                "of": [],
+                "type": "block"
+              },
+              {
+                "options": {
+                  "hotspot": true
+                },
+                "type": "image"
+              }
+            ],
+            "name": "en",
+            "type": "array",
+            "title": "English"
+          },
+          {
+            "of": [
+              {
+                "marks": {
+                  "annotations": [
+                    {
+                      "i18nTitleKey": "inputs.portable-text.annotation.link",
+                      "options": {
+                        "modal": {
+                          "type": "popover"
+                        }
+                      },
+                      "fields": [
+                        {
+                          "validation": [
+                            {
+                              "rules": [
+                                {
+                                  "flag": "uri",
+                                  "constraint": {
+                                    "options": {
+                                      "scheme": [
+                                        "/^http$/",
+                                        "/^https$/",
+                                        "/^tel$/",
+                                        "/^mailto$/"
+                                      ],
+                                      "allowRelative": true,
+                                      "relativeOnly": false,
+                                      "allowCredentials": false
+                                    }
+                                  }
+                                }
+                              ],
+                              "level": "error"
+                            }
+                          ],
+                          "description": "A valid web, email, phone, or relative link.",
+                          "name": "href",
+                          "type": "url",
+                          "title": "Link"
+                        }
+                      ],
+                      "name": "link",
+                      "type": "object"
+                    }
+                  ],
+                  "decorators": [
+                    {
+                      "value": "strong",
+                      "title": "Strong"
+                    },
+                    {
+                      "value": "em",
+                      "title": "Italic"
+                    },
+                    {
+                      "value": "code",
+                      "title": "Code"
+                    },
+                    {
+                      "value": "underline",
+                      "title": "Underline"
+                    },
+                    {
+                      "value": "strike-through",
+                      "title": "Strike"
+                    }
+                  ]
+                },
+                "lists": [
+                  {
+                    "value": "bullet",
+                    "title": "Bulleted list"
+                  },
+                  {
+                    "value": "number",
+                    "title": "Numbered list"
+                  }
+                ],
+                "styles": [
+                  {
+                    "value": "normal",
+                    "title": "Normal"
+                  },
+                  {
+                    "value": "h1",
+                    "title": "Heading 1"
+                  },
+                  {
+                    "value": "h2",
+                    "title": "Heading 2"
+                  },
+                  {
+                    "value": "h3",
+                    "title": "Heading 3"
+                  },
+                  {
+                    "value": "h4",
+                    "title": "Heading 4"
+                  },
+                  {
+                    "value": "h5",
+                    "title": "Heading 5"
+                  },
+                  {
+                    "value": "h6",
+                    "title": "Heading 6"
+                  },
+                  {
+                    "value": "blockquote",
+                    "title": "Quote"
+                  }
+                ],
+                "of": [],
+                "type": "block"
+              },
+              {
+                "options": {
+                  "hotspot": true
+                },
+                "type": "image"
+              }
+            ],
+            "name": "id",
+            "type": "array",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "of": [
+              {
+                "marks": {
+                  "annotations": [
+                    {
+                      "i18nTitleKey": "inputs.portable-text.annotation.link",
+                      "options": {
+                        "modal": {
+                          "type": "popover"
+                        }
+                      },
+                      "fields": [
+                        {
+                          "validation": [
+                            {
+                              "rules": [
+                                {
+                                  "flag": "uri",
+                                  "constraint": {
+                                    "options": {
+                                      "scheme": [
+                                        "/^http$/",
+                                        "/^https$/",
+                                        "/^tel$/",
+                                        "/^mailto$/"
+                                      ],
+                                      "allowRelative": true,
+                                      "relativeOnly": false,
+                                      "allowCredentials": false
+                                    }
+                                  }
+                                }
+                              ],
+                              "level": "error"
+                            }
+                          ],
+                          "description": "A valid web, email, phone, or relative link.",
+                          "name": "href",
+                          "type": "url",
+                          "title": "Link"
+                        }
+                      ],
+                      "name": "link",
+                      "type": "object"
+                    }
+                  ],
+                  "decorators": [
+                    {
+                      "value": "strong",
+                      "title": "Strong"
+                    },
+                    {
+                      "value": "em",
+                      "title": "Italic"
+                    },
+                    {
+                      "value": "code",
+                      "title": "Code"
+                    },
+                    {
+                      "value": "underline",
+                      "title": "Underline"
+                    },
+                    {
+                      "value": "strike-through",
+                      "title": "Strike"
+                    }
+                  ]
+                },
+                "lists": [
+                  {
+                    "value": "bullet",
+                    "title": "Bulleted list"
+                  },
+                  {
+                    "value": "number",
+                    "title": "Numbered list"
+                  }
+                ],
+                "styles": [
+                  {
+                    "value": "normal",
+                    "title": "Normal"
+                  },
+                  {
+                    "value": "h1",
+                    "title": "Heading 1"
+                  },
+                  {
+                    "value": "h2",
+                    "title": "Heading 2"
+                  },
+                  {
+                    "value": "h3",
+                    "title": "Heading 3"
+                  },
+                  {
+                    "value": "h4",
+                    "title": "Heading 4"
+                  },
+                  {
+                    "value": "h5",
+                    "title": "Heading 5"
+                  },
+                  {
+                    "value": "h6",
+                    "title": "Heading 6"
+                  },
+                  {
+                    "value": "blockquote",
+                    "title": "Quote"
+                  }
+                ],
+                "of": [],
+                "type": "block"
+              },
+              {
+                "options": {
+                  "hotspot": true
+                },
+                "type": "image"
+              }
+            ],
+            "name": "th",
+            "type": "array",
+            "title": "ภาษาไทย"
+          },
+          {
+            "of": [
+              {
+                "marks": {
+                  "annotations": [
+                    {
+                      "i18nTitleKey": "inputs.portable-text.annotation.link",
+                      "options": {
+                        "modal": {
+                          "type": "popover"
+                        }
+                      },
+                      "fields": [
+                        {
+                          "validation": [
+                            {
+                              "rules": [
+                                {
+                                  "flag": "uri",
+                                  "constraint": {
+                                    "options": {
+                                      "scheme": [
+                                        "/^http$/",
+                                        "/^https$/",
+                                        "/^tel$/",
+                                        "/^mailto$/"
+                                      ],
+                                      "allowRelative": true,
+                                      "relativeOnly": false,
+                                      "allowCredentials": false
+                                    }
+                                  }
+                                }
+                              ],
+                              "level": "error"
+                            }
+                          ],
+                          "description": "A valid web, email, phone, or relative link.",
+                          "name": "href",
+                          "type": "url",
+                          "title": "Link"
+                        }
+                      ],
+                      "name": "link",
+                      "type": "object"
+                    }
+                  ],
+                  "decorators": [
+                    {
+                      "value": "strong",
+                      "title": "Strong"
+                    },
+                    {
+                      "value": "em",
+                      "title": "Italic"
+                    },
+                    {
+                      "value": "code",
+                      "title": "Code"
+                    },
+                    {
+                      "value": "underline",
+                      "title": "Underline"
+                    },
+                    {
+                      "value": "strike-through",
+                      "title": "Strike"
+                    }
+                  ]
+                },
+                "lists": [
+                  {
+                    "value": "bullet",
+                    "title": "Bulleted list"
+                  },
+                  {
+                    "value": "number",
+                    "title": "Numbered list"
+                  }
+                ],
+                "styles": [
+                  {
+                    "value": "normal",
+                    "title": "Normal"
+                  },
+                  {
+                    "value": "h1",
+                    "title": "Heading 1"
+                  },
+                  {
+                    "value": "h2",
+                    "title": "Heading 2"
+                  },
+                  {
+                    "value": "h3",
+                    "title": "Heading 3"
+                  },
+                  {
+                    "value": "h4",
+                    "title": "Heading 4"
+                  },
+                  {
+                    "value": "h5",
+                    "title": "Heading 5"
+                  },
+                  {
+                    "value": "h6",
+                    "title": "Heading 6"
+                  },
+                  {
+                    "value": "blockquote",
+                    "title": "Quote"
+                  }
+                ],
+                "of": [],
+                "type": "block"
+              },
+              {
+                "options": {
+                  "hotspot": true
+                },
+                "type": "image"
+              }
+            ],
+            "name": "vi",
+            "type": "array",
+            "title": "Tiếng Việt"
+          },
+          {
+            "of": [
+              {
+                "marks": {
+                  "annotations": [
+                    {
+                      "i18nTitleKey": "inputs.portable-text.annotation.link",
+                      "options": {
+                        "modal": {
+                          "type": "popover"
+                        }
+                      },
+                      "fields": [
+                        {
+                          "validation": [
+                            {
+                              "rules": [
+                                {
+                                  "flag": "uri",
+                                  "constraint": {
+                                    "options": {
+                                      "scheme": [
+                                        "/^http$/",
+                                        "/^https$/",
+                                        "/^tel$/",
+                                        "/^mailto$/"
+                                      ],
+                                      "allowRelative": true,
+                                      "relativeOnly": false,
+                                      "allowCredentials": false
+                                    }
+                                  }
+                                }
+                              ],
+                              "level": "error"
+                            }
+                          ],
+                          "description": "A valid web, email, phone, or relative link.",
+                          "name": "href",
+                          "type": "url",
+                          "title": "Link"
+                        }
+                      ],
+                      "name": "link",
+                      "type": "object"
+                    }
+                  ],
+                  "decorators": [
+                    {
+                      "value": "strong",
+                      "title": "Strong"
+                    },
+                    {
+                      "value": "em",
+                      "title": "Italic"
+                    },
+                    {
+                      "value": "code",
+                      "title": "Code"
+                    },
+                    {
+                      "value": "underline",
+                      "title": "Underline"
+                    },
+                    {
+                      "value": "strike-through",
+                      "title": "Strike"
+                    }
+                  ]
+                },
+                "lists": [
+                  {
+                    "value": "bullet",
+                    "title": "Bulleted list"
+                  },
+                  {
+                    "value": "number",
+                    "title": "Numbered list"
+                  }
+                ],
+                "styles": [
+                  {
+                    "value": "normal",
+                    "title": "Normal"
+                  },
+                  {
+                    "value": "h1",
+                    "title": "Heading 1"
+                  },
+                  {
+                    "value": "h2",
+                    "title": "Heading 2"
+                  },
+                  {
+                    "value": "h3",
+                    "title": "Heading 3"
+                  },
+                  {
+                    "value": "h4",
+                    "title": "Heading 4"
+                  },
+                  {
+                    "value": "h5",
+                    "title": "Heading 5"
+                  },
+                  {
+                    "value": "h6",
+                    "title": "Heading 6"
+                  },
+                  {
+                    "value": "blockquote",
+                    "title": "Quote"
+                  }
+                ],
+                "of": [],
+                "type": "block"
+              },
+              {
+                "options": {
+                  "hotspot": true
+                },
+                "type": "image"
+              }
+            ],
+            "name": "ar",
+            "type": "array",
+            "title": "العربية"
+          }
+        ],
+        "name": "content",
+        "type": "object",
+        "title": "文章内容 (多语言)"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "description": "用于列表展示和Open Graph分享",
+        "name": "coverImage",
+        "type": "image",
+        "title": "封面图"
+      },
+      {
+        "fields": [
+          {
+            "initialValue": "GOPRO LED",
+            "name": "name",
+            "type": "string",
+            "title": "作者名称"
+          },
+          {
+            "name": "avatar",
+            "type": "image",
+            "title": "头像"
+          }
+        ],
+        "name": "author",
+        "type": "object",
+        "title": "作者"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "publishedAt",
+        "type": "datetime",
+        "title": "发布时间"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "已发布",
+              "value": "published"
+            },
+            {
+              "title": "草稿",
+              "value": "draft"
+            },
+            {
+              "title": "定时发布",
+              "value": "scheduled"
+            }
+          ]
+        },
+        "initialValue": "published",
+        "name": "status",
+        "type": "string",
+        "title": "发布状态"
+      },
+      {
+        "description": "自动化抓取时使用",
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "url",
+            "type": "url",
+            "title": "原文链接"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "title": "来源网站"
+          },
+          {
+            "initialValue": false,
+            "name": "isAutoGenerated",
+            "type": "boolean",
+            "title": "是否AI生成"
+          }
+        ],
+        "name": "source",
+        "type": "object",
+        "title": "文章来源"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "name": "zh",
+                "type": "string",
+                "title": "中文"
+              },
+              {
+                "name": "en",
+                "type": "string",
+                "title": "English"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "title": "Bahasa Indonesia"
+              },
+              {
+                "name": "th",
+                "type": "string",
+                "title": "ภาษาไทย"
+              },
+              {
+                "name": "vi",
+                "type": "string",
+                "title": "Tiếng Việt"
+              },
+              {
+                "name": "ar",
+                "type": "string",
+                "title": "العربية"
+              }
+            ],
+            "name": "metaTitle",
+            "type": "object",
+            "title": "Meta 标题 (多语言)"
+          },
+          {
+            "fields": [
+              {
+                "rows": 2,
+                "name": "zh",
+                "type": "text",
+                "title": "中文"
+              },
+              {
+                "rows": 2,
+                "name": "en",
+                "type": "text",
+                "title": "English"
+              },
+              {
+                "rows": 2,
+                "name": "id",
+                "type": "text",
+                "title": "Bahasa Indonesia"
+              },
+              {
+                "rows": 2,
+                "name": "th",
+                "type": "text",
+                "title": "ภาษาไทย"
+              },
+              {
+                "rows": 2,
+                "name": "vi",
+                "type": "text",
+                "title": "Tiếng Việt"
+              },
+              {
+                "rows": 2,
+                "name": "ar",
+                "type": "text",
+                "title": "العربية"
+              }
+            ],
+            "name": "metaDescription",
+            "type": "object",
+            "title": "Meta 描述 (多语言)"
+          },
+          {
+            "description": "页面关键词，用于搜索引擎优化",
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "keywords",
+            "type": "array",
+            "title": "SEO关键词"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO 设置"
+      },
+      {
+        "initialValue": 0,
+        "readOnly": true,
+        "name": "viewCount",
+        "type": "number",
+        "title": "阅读次数"
+      },
+      {
+        "initialValue": false,
+        "description": "推荐文章会在首页展示",
+        "name": "isFeatured",
+        "type": "boolean",
+        "title": "设为推荐文章"
+      }
+    ],
+    "name": "article",
+    "type": "document",
+    "title": "资讯文章"
+  },
+  {
+    "fields": [
+      {
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "zh",
+            "type": "string",
+            "title": "中文 (必填)"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "en",
+            "type": "string",
+            "title": "English (必填)"
+          },
+          {
+            "name": "id",
+            "type": "string",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "name": "th",
+            "type": "string",
+            "title": "ภาษาไทย"
+          },
+          {
+            "name": "vi",
+            "type": "string",
+            "title": "Tiếng Việt"
+          },
+          {
+            "name": "ar",
+            "type": "string",
+            "title": "العربية"
+          }
+        ],
+        "name": "title",
+        "type": "object",
+        "title": "分类名称 (多语言)"
+      },
+      {
+        "options": {
+          "source": "title.zh",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug",
+        "title": "URL标识"
+      },
+      {
+        "fields": [
+          {
+            "rows": 2,
+            "name": "zh",
+            "type": "text",
+            "title": "中文"
+          },
+          {
+            "rows": 2,
+            "name": "en",
+            "type": "text",
+            "title": "English"
+          },
+          {
+            "rows": 2,
+            "name": "id",
+            "type": "text",
+            "title": "Bahasa Indonesia"
+          },
+          {
+            "rows": 2,
+            "name": "th",
+            "type": "text",
+            "title": "ภาษาไทย"
+          },
+          {
+            "rows": 2,
+            "name": "vi",
+            "type": "text",
+            "title": "Tiếng Việt"
+          },
+          {
+            "rows": 2,
+            "name": "ar",
+            "type": "text",
+            "title": "العربية"
+          }
+        ],
+        "name": "description",
+        "type": "object",
+        "title": "分类描述 (多语言)"
+      },
+      {
+        "initialValue": 0,
+        "description": "数字越小排序越靠前",
+        "name": "orderRank",
+        "type": "number",
+        "title": "排序权重"
+      }
+    ],
+    "name": "articleCategory",
+    "type": "document",
+    "title": "资讯分类"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "companyName",
+        "type": "string",
+        "title": "公司名称"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "contactName",
+        "type": "string",
+        "title": "联系人"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "email",
+        "type": "string",
+        "title": "邮箱"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "phone",
+        "type": "string",
+        "title": "电话"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "country",
+        "type": "string",
+        "title": "国家/地区"
+      },
+      {
+        "name": "products",
+        "type": "string",
+        "title": "感兴趣的产品"
+      },
+      {
+        "name": "quantity",
+        "type": "string",
+        "title": "预计采购数量"
+      },
+      {
+        "name": "message",
+        "type": "text",
+        "title": "详细需求"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "中文",
+              "value": "zh"
+            },
+            {
+              "title": "English",
+              "value": "en"
+            },
+            {
+              "title": "Bahasa Indonesia",
+              "value": "id"
+            },
+            {
+              "title": "ภาษาไทย",
+              "value": "th"
+            },
+            {
+              "title": "Tiếng Việt",
+              "value": "vi"
+            },
+            {
+              "title": "العربية",
+              "value": "ar"
+            }
+          ]
+        },
+        "name": "locale",
+        "type": "string",
+        "title": "语言"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "新询单",
+              "value": "new"
+            },
+            {
+              "title": "已联系",
+              "value": "contacted"
+            },
+            {
+              "title": "已报价",
+              "value": "quoted"
+            },
+            {
+              "title": "已成交",
+              "value": "won"
+            },
+            {
+              "title": "已关闭",
+              "value": "closed"
+            }
+          ]
+        },
+        "initialValue": "new",
+        "name": "status",
+        "type": "string",
+        "title": "状态"
+      },
+      {
+        "readOnly": true,
+        "name": "submittedAt",
+        "type": "datetime",
+        "title": "提交时间"
+      },
+      {
+        "name": "notes",
+        "type": "text",
+        "title": "跟进备注"
+      }
+    ],
+    "name": "inquiry",
+    "type": "document",
+    "title": "询单管理"
+  }
+]

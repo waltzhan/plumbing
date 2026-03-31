@@ -217,7 +217,7 @@ export default async function ProductsPage({
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                   {products.map((product: any) => {
                     const productName = product.name?.[locale] || product.name?.en || product.name?.zh || '';
-                    const categoryName = product.category?.name?.[locale] || product.category?.name?.en || product.category?.name?.zh || '';
+                    const categoryName = product.category?.title?.[locale] || product.category?.title?.en || product.category?.title?.zh || '';
                     const description = product.shortDescription?.[locale] || product.shortDescription?.en || product.shortDescription?.zh || '';
                     const imageUrl = product.mainImage ? urlForImage(product.mainImage) : null;
 

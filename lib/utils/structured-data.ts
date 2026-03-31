@@ -6,7 +6,7 @@ interface ProductData {
   name: { [key: string]: string };
   description?: { [key: string]: string };
   specifications?: { [key: string]: any };
-  category?: { name: { [key: string]: string } };
+  category?: { title?: { [key: string]: string }; name?: { [key: string]: string } };
   features?: { [key: string]: string[] };
   applications?: { [key: string]: string[] };
 }
@@ -23,27 +23,32 @@ interface LocaleMessages {
  * 包含详细的产品规格、应用场景、技术参数
  */
 export function generateProductSchema(product: ProductData, locale: string = 'en') {
-  const productName = product.name[locale] || product.name.en;
+  const productName = product.name?.[locale] || product.name?.en || '';
   const description = product.description?.[locale] || product.description?.en || '';
   const features = product.features?.[locale] || product.features?.en || [];
   const applications = product.applications?.[locale] || product.applications?.en || [];
-  const category = product.category?.name[locale] || product.category?.name.en || 'LED';
+  const category = product.category?.title?.[locale] || product.category?.title?.en || 'LED';
+  const model = product.model || '';
+  
+  // 确保 features 和 applications 是数组
+  const safeFeatures = Array.isArray(features) ? features : [];
+  const safeApplications = Array.isArray(applications) ? applications : [];
 
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: productName,
-    model: product.model,
-    sku: product.model,
+    model: model,
+    sku: model,
     description: description,
     brand: {
       '@type': 'Brand',
       name: 'GOPRO LED',
-      url: 'https://goproled.com'
+      url: 'https://globalplumb.com'
     },
     manufacturer: {
       '@type': 'Organization',
-      name: 'Xiamen Guangpu Electronics Co., Ltd.',
+      name: 'Xiamen Bojet Sanitary Ware Co., Ltd.',
       foundingDate: '1994',
       address: {
         '@type': 'PostalAddress',
@@ -52,19 +57,19 @@ export function generateProductSchema(product: ProductData, locale: string = 'en
         addressRegion: 'Fujian',
         addressCountry: 'CN'
       },
-      url: 'https://goproled.com'
+      url: 'https://globalplumb.com'
     },
     category: category,
     material: 'Semiconductor',
     productionDate: '1994',
     // AI搜索关键：详细的产品规格
     additionalProperty: [
-      ...(features.map((feature: string) => ({
+      ...(safeFeatures.map((feature: string) => ({
         '@type': 'PropertyValue',
         name: 'Feature',
         value: feature
       }))),
-      ...(applications.map((app: string) => ({
+      ...(safeApplications.map((app: string) => ({
         '@type': 'PropertyValue',
         name: 'Application',
         value: app
@@ -73,7 +78,7 @@ export function generateProductSchema(product: ProductData, locale: string = 'en
     // B2B优化：供应信息
     offers: {
       '@type': 'Offer',
-      '@id': `https://goproled.com/offer/${product.model}`,
+      '@id': `https://globalplumb.com/offer/${product.model}`,
       availability: 'https://schema.org/InStock',
       businessFunction: 'http://purl.org/goodrelations/v1#Sell',
       eligibleRegion: [
@@ -86,7 +91,7 @@ export function generateProductSchema(product: ProductData, locale: string = 'en
       ],
       seller: {
         '@type': 'Organization',
-        name: 'Xiamen Guangpu Electronics Co., Ltd.'
+        name: 'Xiamen Bojet Sanitary Ware Co., Ltd.'
       }
     },
     // AI搜索优化：产品标识
@@ -105,24 +110,24 @@ export function generateOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://goproled.com/#organization',
-    name: 'Xiamen Guangpu Electronics Co., Ltd.',
-    alternateName: ['GOPRO LED', '光莆电子', 'Guangpu Electronics'],
-    url: 'https://goproled.com',
+    '@id': 'https://globalplumb.com/#organization',
+    name: 'Xiamen Bojet Sanitary Ware Co., Ltd.',
+    alternateName: ['BOJET', '博杰卫浴', 'Bojet Sanitary'],
+    url: 'https://globalplumb.com',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://goproled.com/logo.png',
+      url: 'https://globalplumb.com/logo.png',
       width: 200,
       height: 60
     },
     foundingDate: '1994',
-    description: 'Professional LED manufacturer specializing in IR LEDs, Visible Light LEDs, and UV LEDs. Serving Southeast Asia and Middle East markets since 1994.',
+    description: 'Professional sanitary ware manufacturer specializing in faucets, showers, and bathroom fixtures. Serving Southeast Asia and Middle East markets.',
     // 企业资质
     knowsAbout: [
-      'LED Manufacturing',
-      'Infrared LED Technology',
-      'UV LED Solutions',
-      'Visible Light LEDs',
+      'Sanitary Ware Manufacturing',
+      'Faucet Technology',
+      'Shower Systems',
+      'Bathroom Fixtures',
       'SMD LED Components',
       'Electronic Components'
     ],
@@ -146,7 +151,7 @@ export function generateOrganizationSchema() {
         '@type': 'ContactPoint',
         contactType: 'sales',
         telephone: '+86-592-12345678',
-        email: 'sales@goproled.com',
+        email: 'sales@globalplumb.com',
         availableLanguage: ['English', 'Chinese', 'Indonesian', 'Thai', 'Vietnamese', 'Arabic'],
         areaServed: ['Southeast Asia', 'Middle East'],
         hoursAvailable: 'Mo-Fr 09:00-18:00'
@@ -168,9 +173,9 @@ export function generateWebsiteSchema(locale: string = 'en') {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': `https://goproled.com/${locale}/#website`,
+    '@id': `https://globalplumb.com/${locale}/#website`,
     name: siteName,
-    url: `https://goproled.com/${locale}`,
+    url: `https://globalplumb.com/${locale}`,
     description: 'Professional LED manufacturer serving Southeast Asia and Middle East markets',
     inLanguage: locale,
     // AI搜索优化：站点搜索
@@ -178,7 +183,7 @@ export function generateWebsiteSchema(locale: string = 'en') {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `https://goproled.com/${locale}/products?q={search_term_string}`
+        urlTemplate: `https://globalplumb.com/${locale}/products?q={search_term_string}`
       },
       'query-input': 'required name=search_term_string'
     },
@@ -186,7 +191,7 @@ export function generateWebsiteSchema(locale: string = 'en') {
     translationOfWork: ['en', 'zh', 'id', 'th', 'vi', 'ar'].map(l => ({
       '@type': 'WebSite',
       inLanguage: l,
-      url: `https://goproled.com/${l}`
+      url: `https://globalplumb.com/${l}`
     }))
   };
 }
@@ -202,7 +207,7 @@ export function generateBreadcrumbSchema(items: Array<{ name: string; url: strin
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `https://goproled.com/${locale}${item.url}`
+      item: `https://globalplumb.com/${locale}${item.url}`
     }))
   };
 }

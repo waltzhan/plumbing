@@ -23,46 +23,24 @@ function getMessages(locale: string) {
 // ISR 配置：每 1 小时重新验证
 export const revalidate = 3600;
 
-// 生成静态参数 - 使用备用 slug 列表
+// 生成静态参数 - 从 Sanity 动态获取所有产品 slug
 export async function generateStaticParams() {
-  // 使用已知的产品 slug 列表
-  // 这些是从 Sanity 获取的真实产品 slug
-  const knownSlugs = [
-    'lidar-vcsel-emitter-sensor',
-    'dust-visualization-module',
-    'static-uv-sterilization-module-gp-xs17xx-series',
-    'flexible-contact-sensing-module',
-    'proximity-reflective-ir-sensor-module-1',
-    'proximity-reflective-ir-sensor-module-2',
-    'proximity-reflective-ir-sensor-module-3',
-    'face-recognition-body-detection-ir-sensor-1',
-    'face-recognition-body-detection-ir-sensor-2',
-    'face-recognition-body-detection-ir-sensor-3',
-    'air-quality-sensor-module',
-    'uv-sterilization-module-gp-xs15xx-series',
-    'uv-sterilization-module-gp-xs16xx-series',
-    'uv-sterilization-module-gp-xs18xx-series',
-    'uv-sterilization-module-gp-xs19xx-series',
-    'uv-sterilization-module-gp-xs20xx-series',
+  // 暂时只生成一个产品的静态页面用于测试
+  // 如果这能工作，说明问题是数据相关的
+  return [
+    { locale: 'en', slug: 'toto-lb-two-handle-widespread-1-2-gpm-bathroom-sink-faucet-polished-chrome-tls01201u-cp' },
+    { locale: 'zh', slug: 'toto-lb-two-handle-widespread-1-2-gpm-bathroom-sink-faucet-polished-chrome-tls01201u-cp' },
   ];
-  
-  const params: { locale: string; slug: string }[] = [];
-  for (const locale of locales) {
-    for (const slug of knownSlugs) {
-      params.push({ locale, slug });
-    }
-  }
-  return params;
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ledcoreco.com';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://globalplumb.com';
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: { locale: string; slug: string };
 }): Promise<Metadata> {
-  const { locale, slug } = await params;
+  const { locale, slug } = params;
   const product = await getProductBySlug(slug);
 
   if (!product) {
@@ -76,7 +54,14 @@ export async function generateMetadata({
     product.shortDescription?.en ||
     '';
   const title = product.seo?.metaTitle?.[locale] || `${name} | bojet`;
-  const imageUrl = product.mainImage ? urlForImage(product.mainImage) : `${baseUrl}/og-image.jpg`;
+  let imageUrl = `${baseUrl}/og-image.jpg`;
+  try {
+    if (product.mainImage) {
+      imageUrl = urlForImage(product.mainImage);
+    }
+  } catch (error) {
+    console.error('Error generating image URL in metadata:', error);
+  }
 
   // 为每种语言生成 alternate 链接
   const alternateLanguages: Record<string, string> = {};
@@ -120,7 +105,7 @@ export async function generateMetadata({
       name,
       product.model,
       'LED',
-      product.category?.name?.[locale] || 'LED',
+      product.category?.title?.[locale] || 'LED',
       locale === 'zh' ? '博杰卫浴' : 'bojet',
       'manufacturer',
       'wholesale',
@@ -143,9 +128,9 @@ export async function generateMetadata({
 export default async function ProductDetailPage({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: { locale: string; slug: string };
 }) {
-  const { locale, slug } = await params;
+  const { locale, slug } = params;
   const messages = getMessages(locale);
   const product = await getProductBySlug(slug);
 
@@ -193,9 +178,9 @@ export default async function ProductDetailPage({
 
   const productName = product.name?.[locale] || product.name?.en || product.name?.zh || '';
   const categoryName =
-    product.category?.name?.[locale] ||
-    product.category?.name?.en ||
-    product.category?.name?.zh ||
+    product.category?.title?.[locale] ||
+    product.category?.title?.en ||
+    product.category?.title?.zh ||
     '';
   const rawDescription =
     product.description?.[locale] ||
@@ -210,26 +195,38 @@ export default async function ProductDetailPage({
   // const features: string[] =
   //   product.features?.[locale] || product.features?.en || product.features?.zh || [];
   const features: string[] = [];
-  const applications: string[] =
-    product.applications?.[locale] || product.applications?.en || product.applications?.zh || [];
+  const rawApplications = product.applications?.[locale] || product.applications?.en || product.applications?.zh || [];
+  const applications: string[] = Array.isArray(rawApplications) ? rawApplications : [];
 
   const imageUrl = product.mainImage ? urlForImage(product.mainImage) : null;
 
   // 结构化数据
-  const productSchema = generateProductSchema(product, locale);
-  const breadcrumbSchema = generateBreadcrumbSchema(
-    [
-      { name: messages.navigation.home, url: '/' },
-      { name: messages.navigation.products, url: '/products' },
-      { name: productName, url: `/products/${slug}` },
-    ],
-    locale,
-  );
+  let productSchema: any = {};
+  let breadcrumbSchema: any = {};
+  try {
+    productSchema = generateProductSchema(product, locale);
+    breadcrumbSchema = generateBreadcrumbSchema(
+      [
+        { name: messages?.navigation?.home || 'Home', url: '/' },
+        { name: messages?.navigation?.products || 'Products', url: '/products' },
+        { name: productName, url: `/products/${slug}` },
+      ],
+      locale,
+    );
+  } catch (error) {
+    console.error('Error generating schema:', error);
+  }
 
   // 相关产品
-  const relatedProducts = product.category?._id
-    ? await getRelatedProducts(product._id, product.category._id, 4)
-    : [];
+  let relatedProducts: any[] = [];
+  try {
+    if (product.category?._id) {
+      relatedProducts = await getRelatedProducts(product._id, product.category._id, 4);
+    }
+  } catch (error) {
+    console.error('Error fetching related products:', error);
+    relatedProducts = [];
+  }
 
   const isRtl = locale === 'ar';
 
@@ -243,9 +240,9 @@ export default async function ProductDetailPage({
         <div className="bg-white border-b">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <nav className={`flex items-center space-x-2 text-sm text-gray-500 ${isRtl ? 'flex-row-reverse space-x-reverse' : ''}`}>
-              <Link href={getLocalizedHref('/')} className="hover:text-blue-900">{messages.navigation.home}</Link>
+              <Link href={getLocalizedHref('/')} className="hover:text-blue-900">{messages?.navigation?.home || 'Home'}</Link>
               <span>/</span>
-              <Link href={getLocalizedHref('/products')} className="hover:text-blue-900">{messages.navigation.products}</Link>
+              <Link href={getLocalizedHref('/products')} className="hover:text-blue-900">{messages?.navigation?.products || 'Products'}</Link>
               <span>/</span>
               {categoryName && (
                 <>
@@ -298,7 +295,7 @@ export default async function ProductDetailPage({
                 {productName}
               </h1>
               {product.model && (
-                <p className="text-gray-400 text-sm font-mono mb-4">{t('products.model')}: {product.model}</p>
+                <p className="text-gray-400 text-sm font-mono mb-4">{t('products.model') || 'Model'}: {product.model}</p>
               )}
               {product.status === 'new' && (
                 <span className="inline-block bg-green-500 text-white text-sm font-bold px-3 py-1 rounded mb-4">
@@ -324,7 +321,7 @@ export default async function ProductDetailPage({
                   href={getLocalizedHref('/contact')}
                   className="flex-1 bg-blue-900 text-white text-center py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
                 >
-                  {messages.navigation.inquiry}
+                  {messages?.navigation?.inquiry || 'Inquiry'}
                 </Link>
               </div>
             </div>
@@ -371,22 +368,30 @@ export default async function ProductDetailPage({
           )}
 
           {/* Specifications Table */}
-          {product.specifications && product.specifications.length > 0 && (
+          {product.specifications && typeof product.specifications === 'object' && Object.keys(product.specifications).length > 0 && (
             <div className="bg-white rounded-xl shadow-md p-8 mb-12">
               <h2 className="text-xl font-bold text-gray-900 mb-6">{t('products.specifications')}</h2>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <tbody>
-                    {product.specifications.map((spec: any, index: number) => (
-                      <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                        <td className={`py-3 px-5 font-medium text-gray-700 w-1/3 ${isRtl ? 'text-right' : ''}`}>
-                          {spec.name?.[locale] || spec.name?.en || spec.name?.zh || spec.name}
-                        </td>
-                        <td className={`py-3 px-5 text-gray-900 ${isRtl ? 'text-right' : ''}`}>
-                          {spec.value} {spec.unit}
-                        </td>
-                      </tr>
-                    ))}
+                    {Object.entries(product.specifications)
+                      .filter(([key, value]) => value && key !== '_type')
+                      .map(([key, value], index) => (
+                        <tr key={key} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                          <td className={`py-3 px-5 font-medium text-gray-700 w-1/3 ${isRtl ? 'text-right' : ''}`}>
+                            {key === 'material' ? '材质' :
+                             key === 'finish' ? '表面处理' :
+                             key === 'color' ? '颜色' :
+                             key === 'size' ? '尺寸' :
+                             key === 'weight' ? '重量' :
+                             key === 'installation' ? '安装方式' :
+                             key === 'certification' ? '认证' : key}
+                          </td>
+                          <td className={`py-3 px-5 text-gray-900 ${isRtl ? 'text-right' : ''}`}>
+                            {value as string}
+                          </td>
+                        </tr>
+                      ))}
                   </tbody>
                 </table>
               </div>
@@ -397,12 +402,19 @@ export default async function ProductDetailPage({
           {relatedProducts.length > 0 && (
             <div className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 mb-6">
-                {locale === 'zh' ? '相关产品' : locale === 'ar' ? 'منتجات ذات صلة' : 'Related Products'}
+                {t('products.relatedProducts') || (locale === 'zh' ? '相关产品' : locale === 'ar' ? 'منتجات ذات صلة' : 'Related Products')}
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {relatedProducts.map((p: any) => {
                   const rName = p.name?.[locale] || p.name?.en || p.name?.zh || '';
-                  const rImg = p.mainImage ? urlForImage(p.mainImage) : null;
+                  let rImg = null;
+                  try {
+                    if (p.mainImage) {
+                      rImg = urlForImage(p.mainImage);
+                    }
+                  } catch (error) {
+                    console.error('Error generating image URL for related product:', error);
+                  }
                   return (
                     <Link
                       key={p._id}
@@ -432,7 +444,7 @@ export default async function ProductDetailPage({
           {/* Back Link */}
           <div className={isRtl ? 'text-right' : ''}>
             <Link href={getLocalizedHref('/products')} className="text-blue-900 hover:underline text-sm">
-              ← {t('products.backToProducts')}
+              ← {t('products.backToProducts') || 'Back to Products'}
             </Link>
           </div>
         </div>
