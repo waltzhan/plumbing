@@ -38,9 +38,9 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://globalplumb.com';
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { locale, slug } = params;
+  const { locale, slug } = await params;
   const product = await getProductBySlug(slug);
 
   if (!product) {
@@ -128,9 +128,9 @@ export async function generateMetadata({
 export default async function ProductDetailPage({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { locale, slug } = params;
+  const { locale, slug } = await params;
   const messages = getMessages(locale);
   const product = await getProductBySlug(slug);
 
@@ -198,7 +198,14 @@ export default async function ProductDetailPage({
   const rawApplications = product.applications?.[locale] || product.applications?.en || product.applications?.zh || [];
   const applications: string[] = Array.isArray(rawApplications) ? rawApplications : [];
 
-  const imageUrl = product.mainImage ? urlForImage(product.mainImage) : null;
+  let imageUrl = null;
+  try {
+    if (product.mainImage) {
+      imageUrl = urlForImage(product.mainImage);
+    }
+  } catch (error) {
+    console.error('Error generating main image URL:', error);
+  }
 
   // 结构化数据
   let productSchema: any = {};
